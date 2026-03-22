@@ -1,4 +1,4 @@
-A simple init system written in Pascal. Services are started from plaintext scripts with udev and agetty being started from within the init itself. Written for Alpine Linux but portable to Void and probably many others with path adjustments. System will run with less than 8 processes and all services besides udev are optional.
+A simple init system written in Pascal. Services are started from plaintext scripts with udev and agetty being started from within the init itself. Written for Alpine Linux but portable to Void and probably many others with path adjustments. System will run with less than 8 processes and all services besides udev are optional. Alpine dependencies are util-linux and eudev. If you want to compile on system you need to enable testing repo and then download musl-dev, binutils and fpc.
 
 To install, compile with fpc and copy to /sbin/pinit. Then symlink to /sbin/init.
 
