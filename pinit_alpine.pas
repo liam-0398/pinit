@@ -14,6 +14,7 @@ const
   RB_AUTOBOOT  = $01234567;
   RB_HALT      = $cdef0123;
   TIOSCTTY     = $540E;
+  WNOHANG      = 1;
 
 var
    ENV, GG: PPChar;
@@ -248,6 +249,7 @@ begin
              else fpWaitPid(pid, @status, 0);
 
     FreeMem(PP);
+    dontFearTheReaper(0);
 
 end;
 
