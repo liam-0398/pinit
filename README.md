@@ -20,4 +20,4 @@ Misc is where you set things like your hostname and hwclock sync.
 
 I am making my own distro based on alpine using this init currently. Everything I use functions just fine. Boot time is instant and service management is easy.
 
-This is in heavy development so use at your own risk. I am writing this to learn Pascal and systems programming as well as wanting full control over my system in a way I personally like. My use case has no need for service supervision and such luxuries. Current issues on alpine are poweroff does nothing and reboot powers off. I will rewrite shutdown scripts in the future.
+This is in heavy development so use at your own risk. I am writing this to learn Pascal and systems programming as well as wanting full control over my system in a way I personally like. My use case has no need for service supervision and such luxuries. Current issues on alpine are poweroff does nothing and reboot powers off as well as some zombies that I havent figured out how to send back to the grave, no performance or stability impacts though. I will rewrite shutdown scripts in the future.
